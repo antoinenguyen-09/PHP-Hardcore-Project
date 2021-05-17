@@ -30,4 +30,6 @@
 | hints     | varchar(255) | YES  |     | NULL    |                |
 +-----------+--------------+------+-----+---------+----------------+
 
-- Ngoài ra trong thư mục gốc này tạo thêm 2 thư mục con là baitap va challenge.
+- Ngoài ra trong thư mục gốc này tạo thêm 2 thư mục con là baitap va challenge:
++ baitap: dùng cho teacher để upload 1 file pdf chứa đề, và student có thể download đề từ folder này.
++ challenge: dùng cho teacher để upload 1 file txt lên.
