@@ -17,7 +17,10 @@ class permission
 	function is_teacher() {
 		$teacher = false;
         
-        require_once('config1.php');
+        $con1 = new mysqli("localhost","kali","kali","class");
+		if ($con1->connect_error) {
+			die("Connection failed: " . $con1->connect_error);
+		}
 		$user = $this->username;
 		$pass = $this->password;
 		$stmt = $con1->prepare("SELECT * FROM teacher WHERE username = ? AND password = ?");
@@ -32,7 +35,10 @@ class permission
     function is_student() {
         $student = false;
 
-        require_once('config2.php');
+        $con2 = new mysqli("localhost","kali","kali","class");
+		if ($con2->connect_error) {
+			die("Connection failed: " . $con2->connect_error);
+		}
 		$user = $this->username;
 		$pass = $this->password;
 		$stmt = $con2->prepare("SELECT * FROM student WHERE username = ? AND password = ?");
