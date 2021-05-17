@@ -14,7 +14,7 @@ else{
     if ($con9->connect_error) {
         die("Connection failed: " . $con9->connect_error);
     }
-    $id = 1;
+    $id = $_SESSION['id'];
     $x = 0;
     $arr = array();
     $stmt = $con8->prepare("SELECT * FROM student WHERE id=?");
