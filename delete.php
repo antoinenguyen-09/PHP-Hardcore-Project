@@ -43,3 +43,4 @@ if(!isset($_SESSION['teacher']) || !$_SESSION['teacher']){
     <h1 style="color: green;"><?php if(isset($msg)) echo $msg; ?></h1>
     <?php if(isset($msg))  echo '<a href="index.php"><button type="button" class="btn btn-secondary">Come back to home page</button></a>'; ?>
 </body>
+</html>
