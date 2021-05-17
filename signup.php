@@ -31,7 +31,7 @@
         </div>
         <p style="color: red"><?php if(isset($_GET['confirm']) && $_GET['confirm']=="error") echo "Wrong confirmed password";?></p>       
 		<div class="form-group">
-            <button type="submit" name="save" class="btn btn- btn-lg btn-block">Add now</button>
+            <button type="submit" name="save" class="btn btn-info btn-lg btn-block">Add now</button>
         </div>
     </form>
 	 <p style="color: green"><?php if(isset($_GET['status']) && $_GET['status']=="success") { $comeback='<a href="index.php"><button type="button" class="btn btn-secondary">Come back to home page</button></a>'; echo "Adding successfully!"; } ?></p>
