@@ -3,7 +3,10 @@
 ### 1. Nguyễn Cao Huy Hoàng:
 
 a) Xử lý thông tin của sinh viên (tên đăng nhập, mật khẩu, họ tên, email, số điện thoại):
-- Thêm sinh viên: addstu.php, addstu_a.php
+- Thêm sinh viên (dành cho giáo viên): addstu.php, addstu_a.php
+- Sửa thông tin sinh viên (dành cho giáo viên): tec_update.php, tec_update_a.php
+- Sửa thông tin sinh viên (dành cho sinh viên): st_update.php, st_update_a.php
+- Xóa sinh viên (dành cho giáo viên): delete.php
 - Profile của từng sinh viên: details.php
 - Danh sách sinh viên: list.php
 
@@ -18,6 +21,7 @@ c) Chức năng nhắn tin:
 - Xem tin nhắn được gửi tới: view_mess.php
 
 ### 2. Đặng Minh Đức:
+
 a) Chức năng giao, trả bài:
 - Giao bài (dành cho giáo viên): giaobai.php, up_assign.php
 - Trả bài (dành cho sinh viên): submit.php, uploadanswer.php
