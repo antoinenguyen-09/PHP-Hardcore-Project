@@ -42,7 +42,7 @@ else{
         if($stmt1->execute() && $con7->query($sql)){    // 
             header('Location: addstu.php?status=success');
         } else {
-            header('Location: addstu.php?status=failed');
+            echo "Failed";
         }
     }
 } 
