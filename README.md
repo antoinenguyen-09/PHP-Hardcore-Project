@@ -1,7 +1,7 @@
-Super-Fast-PHP-Project-
+# Super-Fast-PHP-Project-
 Quả project web siêu khủng được thực hiện điên cuồng trong 1 tuần không ăn không ngủ from Antoine và DucDM&lt <3
 
-Hướng dẫn sử dụng:
+# Hướng dẫn sử dụng:
 - Dùng MYSQL tạo các database có tên như sau: class, message, game.
 - Trong database "class" có các bảng sau:
 + Student:
