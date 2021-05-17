@@ -58,5 +58,7 @@
 </table>
 <br/>
 <button type="button" class="btn btn-primary btn-lg" onclick='window.location.href="sendmess.php"'>Chat with this student</button>
+<?php if(isset($_SESSION['teacher']) && $_SESSION['teacher']) echo '<a href="tec_update.php"><button type="button" class="btn btn-primary btn-lg">Update information</button></a>';?>
+<?php if(isset($_SESSION['teacher']) && $_SESSION['teacher']) echo '<br/><br/><form action="delete.php" method="post"><button type="submit" name="delete" class="btn btn-primary btn-lg">Delete this student</button></form>';?>
 </body>
 </html>
