@@ -28,7 +28,7 @@ else{
         die("Connection failed: " . $con5->connect_error);
     } 
     $stmt = $con5->prepare("SELECT * FROM student WHERE username=?");
-    $stmt->bind_param("ss", $_POST['username'], $_POST['fullname']);
+    $stmt->bind_param("s", $_POST['username']);
     $stmt->execute();
     if($stmt->fetch() == 1){
         header('Location: addstu.php?status=failed');
@@ -42,7 +42,7 @@ else{
         if($stmt1->execute() && $con7->query($sql)){    // 
             header('Location: addstu.php?status=success');
         } else {
-            echo 'Failed';
+            header('Location: addstu.php?status=failed');
         }
     }
 } 
