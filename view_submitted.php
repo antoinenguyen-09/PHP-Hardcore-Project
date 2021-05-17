@@ -8,8 +8,9 @@ include 'assign_list.php';
 $fileList = glob("$mypath/*");
 foreach($fileList as $filename){
     if(is_file($filename)){
-	$target = basename("$filename").PHP_EOL;
-        echo $target . '<a href="' . $filename . '"> Download </a>','<br>';
+	$target = basename("$filename",".pdf").PHP_EOL;
+	$target1 = basename("$filename").PHP_EOL;
+        echo $target . '<a href="/baitap/' . $target . '/' . $target1 . '"> Download </a>','<br>';
     }   
 }
 ?>
