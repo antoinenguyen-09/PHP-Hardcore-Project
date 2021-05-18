@@ -53,7 +53,7 @@ if(!isset($_SESSION['teacher']) || !$_SESSION['teacher']){
             <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Update now</button>
         </div>
     </form>
-	 <p style="color: green"><?php if(isset($_GET['status']) && $_GET['status']=="success") { $comeback='<a href="index.php"><button type="button" class="btn btn-secondary">Come back to home page</button></a>'; echo "Adding successfully!"; } ?></p>
+	 <p style="color: green"><?php if(isset($_GET['status']) && $_GET['status']=="success") { $comeback='<a href="index.php"><button type="button" class="btn btn-secondary">Come back to home page</button></a>'; echo "Updating successfully!"; } ?></p>
     <?php echo $comeback; ?>
 </div>
 </body>
