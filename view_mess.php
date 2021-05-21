@@ -54,5 +54,6 @@
            $msg = "Your box chat empty now!";
        }
     ?>
+   <p style="color: red"><?php echo $msg;?></p>
 </table>
 
